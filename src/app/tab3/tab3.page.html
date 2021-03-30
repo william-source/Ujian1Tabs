@@ -17,13 +17,13 @@
   </ion-card>
   <ion-grid>
     <ion-row>
-      <ion-col size="3" *ngFor="let iFoto of urlImageStorage; index as position;let namaFoto of dataFoto">
+      <ion-col size="3" *ngFor="let iFoto of dataFoto; index as position">
 
         <ion-card>
-        <ion-img [src]="iFoto" (click)="detail(iFoto)"> </ion-img>
+        <ion-img [src]="iFoto.link" (click)="detail(iFoto.link)"> </ion-img>
         
         <ion-card-header>
-          <ion-card-title>{{namaFoto}}</ion-card-title>
+          <ion-card-title>{{iFoto.nama}}</ion-card-title>
         </ion-card-header>
         </ion-card>
 
