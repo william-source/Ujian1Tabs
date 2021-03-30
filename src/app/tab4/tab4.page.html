@@ -1,0 +1,23 @@
+<ion-header> 
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>ZOOM</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid *ngIf="fileImage">
+    <ion-row>
+      <ion-col size="10">
+
+        <ion-img [src]="fileImage"></ion-img>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+</ion-content>
